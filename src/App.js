@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
+import {firebaseConnect} from './firebaseConnect';
 
 function App() {
-  return (
-    <div className="App">
-      Note list
-    </div>
-  );
+    console.log(firebaseConnect);
+    return (
+        <div className="App">
+            Note list
+        </div>
+    );
 }
 
 export default App;

@@ -1,3 +1,7 @@
+import firebase from 'firebase/app';
+import 'firebase/database'; // If using Firebase database
+import 'firebase/storage';
+
 // Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyABX1kTHUjl7-usfiKM4Rp8YKpk9gsGt-0",
@@ -10,5 +14,6 @@ var firebaseConfig = {
     measurementId: "G-E1THBX79DV"
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+export const firebaseConnect = firebase.initializeApp(firebaseConfig);
+
+
