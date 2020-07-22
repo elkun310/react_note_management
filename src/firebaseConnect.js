@@ -14,6 +14,20 @@ var firebaseConfig = {
     measurementId: "G-E1THBX79DV"
 };
 // Initialize Firebase
-export const firebaseConnect = firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
+export const noteData = firebase.database().ref('dataForNote');
 
+// var noteData = firebase.database().ref('dataForNote/node 2');
+//update data
+// noteData.set({
+//     id :4,
+//     title : "Note 21/07/2020",
+//     content : "demo update firebase"
+// })
+
+
+//show data
+// data.once('value').then(function(snapshot){
+//     console.log(snapshot.val());
+// })
 
