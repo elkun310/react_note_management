@@ -22,17 +22,9 @@ class NoteForm extends Component {
         var item = {};
         item.noteTitle = title;
         item.noteContent = content;
-        // //gui item len App
-        // this.props.getDataNote(item);
-        // this.setState({
-        //     noteTitle: "",
-        //     noteContent: "",
-        // });
-        
         this.props.addDataStore(item); //su dung reducer trong store
 
     }
-
     render() {
         return (
             <form id="note-form">
